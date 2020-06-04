@@ -39,7 +39,7 @@
  *
  * \acme_license_stop
  *
- * Project: My Project
+ * Project: ATtiny816_ADC
  * Target:  ATtiny816 
  *
  **/

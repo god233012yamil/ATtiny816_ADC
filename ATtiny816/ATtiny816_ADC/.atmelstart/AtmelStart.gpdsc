@@ -23,7 +23,7 @@
   <conditions>
     <condition id="AVR Device Startup">
       <description>Dependency on Device Startup components</description>
-      <require Cclass="Device" Cgroup="Startup" Cversion="1.3.0"/>
+      <require Cclass="Device" Cgroup="Startup" Cversion="1.4.0"/>
     </condition>
     <condition id="ARMCC, GCC, IAR">
       <require Dname="ATtiny816"/>
@@ -45,6 +45,7 @@
         <file category="doc" condition="ARMCC, GCC, IAR" name="modules/clkctrl/doc/clkctrl.rst"/>
         <file category="doc" condition="ARMCC, GCC, IAR" name="modules/cpuint/doc/cpuint.rst"/>
         <file category="doc" condition="ARMCC, GCC, IAR" name="modules/slpctrl/doc/slpctrl.rst"/>
+        <file category="doc" condition="ARMCC, GCC, IAR" name="modules/vref/doc/vref.rst"/>
         <file category="source" condition="ARMCC, GCC, IAR" name="main.c"/>
         <file category="source" condition="ARMCC, GCC, IAR" name="src/driver_init.c"/>
         <file category="header" condition="ARMCC, GCC, IAR" name="include/driver_init.h"/>
@@ -68,12 +69,14 @@
         <file category="header" condition="ARMCC, GCC, IAR" name="include/rstctrl.h"/>
         <file category="header" condition="ARMCC, GCC, IAR" name="include/slpctrl.h"/>
         <file category="header" condition="ARMCC, GCC, IAR" name="include/system.h"/>
+        <file category="header" condition="ARMCC, GCC, IAR" name="include/vref.h"/>
         <file category="source" condition="ARMCC, GCC, IAR" name="src/adc_basic.c"/>
         <file category="source" condition="ARMCC, GCC, IAR" name="src/bod.c"/>
         <file category="source" condition="ARMCC, GCC, IAR" name="src/clkctrl.c"/>
         <file category="source" condition="ARMCC, GCC, IAR" name="src/cpuint.c"/>
         <file category="source" condition="ARMCC, GCC, IAR" name="src/protected_io.S"/>
         <file category="source" condition="ARMCC, GCC, IAR" name="src/slpctrl.c"/>
+        <file category="source" condition="ARMCC, GCC, IAR" name="src/vref.c"/>
         <file category="header" condition="ARMCC, GCC, IAR" name="utils/assembler.h"/>
         <file category="header" condition="ARMCC, GCC, IAR" name="utils/assembler/gas.h"/>
         <file category="header" condition="ARMCC, GCC, IAR" name="utils/assembler/iar.h"/>

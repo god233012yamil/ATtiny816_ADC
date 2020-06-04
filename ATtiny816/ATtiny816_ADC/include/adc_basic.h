@@ -29,6 +29,7 @@
 #define ADC_BASIC_H_INCLUDED
 
 #include <compiler.h>
+#include <adc_basic.h>
 
 #ifdef __cplusplus
 extern "C" {

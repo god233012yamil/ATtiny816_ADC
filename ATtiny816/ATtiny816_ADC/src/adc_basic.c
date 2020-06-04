@@ -57,27 +57,27 @@ int8_t ADC_0_init()
 			 | ADC_REFSEL_VDDREF_gc /* VDD */
 			 | 0 << ADC_SAMPCAP_bp; /* Sample Capacitance Selection: disabled */
 
-	// ADC0.CTRLD = 0 << ADC_ASDV_bp /* Automatic Sampling Delay Variation: disabled */
-	//		 | 0x0 << ADC_SAMPDLY_gp /* Sampling Delay Selection: 0x0 */
-	//		 | ADC_INITDLY_DLY0_gc; /* Delay 0 CLK_ADC cycles */
+	ADC0.CTRLD = 0 << ADC_ASDV_bp /* Automatic Sampling Delay Variation: disabled */
+			 | 0x0 << ADC_SAMPDLY_gp /* Sampling Delay Selection: 0x0 */
+			 | ADC_INITDLY_DLY0_gc; /* Delay 0 CLK_ADC cycles */
 
-	// ADC0.CTRLE = ADC_WINCM_NONE_gc; /* No Window Comparison */
+	ADC0.CTRLE = ADC_WINCM_NONE_gc; /* No Window Comparison */
 
-	// ADC0.DBGCTRL = 0 << ADC_DBGRUN_bp; /* Debug run: disabled */
+	ADC0.DBGCTRL = 0 << ADC_DBGRUN_bp; /* Debug run: disabled */
 
-	// ADC0.EVCTRL = 0 << ADC_STARTEI_bp; /* Start Event Input Enable: disabled */
+	ADC0.EVCTRL = 0 << ADC_STARTEI_bp; /* Start Event Input Enable: disabled */
 
-	// ADC0.INTCTRL = 0 << ADC_RESRDY_bp /* Result Ready Interrupt Enable: disabled */
-	//		 | 0 << ADC_WCMP_bp; /* Window Comparator Interrupt Enable: disabled */
+	ADC0.INTCTRL = 0 << ADC_RESRDY_bp /* Result Ready Interrupt Enable: disabled */
+			 | 0 << ADC_WCMP_bp; /* Window Comparator Interrupt Enable: disabled */
 
 	// ADC input pin 0
 	ADC0.MUXPOS = ADC_MUXPOS_AIN0_gc; 
 
-	// ADC0.SAMPCTRL = 0x0 << ADC_SAMPLEN_gp; /* Sample length: 0x0 */
+	ADC0.SAMPCTRL = 0x0 << ADC_SAMPLEN_gp; /* Sample length: 0x0 */
 
-	// ADC0.WINHT = 0x0; /* Window Comparator High Threshold: 0x0 */
+	ADC0.WINHT = 0x0; /* Window Comparator High Threshold: 0x0 */
 
-	// ADC0.WINLT = 0x0; /* Window Comparator Low Threshold: 0x0 */
+	ADC0.WINLT = 0x0; /* Window Comparator Low Threshold: 0x0 */
 
 	ADC0.CTRLA = 1 << ADC_ENABLE_bp     /* ADC Enable: enabled */
 	             | 0 << ADC_FREERUN_bp  /* ADC Freerun mode: disabled */

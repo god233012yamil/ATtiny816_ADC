@@ -42,6 +42,7 @@
 #include <atmel_start_pins.h>
 
 #include <clkctrl.h>
+#include <vref.h>
 
 #include <adc_basic.h>
 

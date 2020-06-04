@@ -36,6 +36,8 @@ extern "C" {
 
 int8_t SLPCTRL_init();
 
+void SLPCTRL_set_sleep_mode(SLPCTRL_SMODE_t setmode);
+
 #ifdef __cplusplus
 }
 #endif

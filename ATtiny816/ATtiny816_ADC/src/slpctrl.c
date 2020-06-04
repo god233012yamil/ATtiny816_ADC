@@ -49,3 +49,8 @@ int8_t SLPCTRL_init()
 
 	return 0;
 }
+
+void SLPCTRL_set_sleep_mode(SLPCTRL_SMODE_t setmode)
+{
+	SLPCTRL.CTRLA = (SLPCTRL.CTRLA & ~SLPCTRL_SMODE_gm) | (setmode & SLPCTRL_SMODE_gm);
+}

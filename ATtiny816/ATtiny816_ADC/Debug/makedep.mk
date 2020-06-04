@@ -24,3 +24,5 @@ src\protected_io.S
 
 src\slpctrl.c
 
+src\vref.c
+
