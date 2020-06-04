@@ -67,7 +67,7 @@ int main(void) {
 	result = 0;	
 	voltage = 0;	
 
-	// Loop
+	// Main Loop
 	while (1) {
 		// Measure the voltage on ADC input pin 4 (PA4).
 		measure_voltage(ADC_MUXPOS_AIN4_gc);
